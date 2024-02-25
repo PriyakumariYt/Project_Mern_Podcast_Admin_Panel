@@ -1,0 +1,939 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html{
+     font-size: 62.5%; 
+
+}
+body{
+  background-image: linear-gradient(to right top, #251b21, #20191f, #1b161d, #16131a, #101017, #0e1118, #0b1219, #08131a, #07181e, #061c21, #052123, #062523);
+  text-transform: capitalize;
+
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+  align-items: center;
+  height: 100vh;
+
+}
+.section-registration{
+  /* border:2px solid green; */
+  margin: auto;
+
+}
+.container-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.registration-form {
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff5f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  font-size: 2rem; 
+  margin-bottom: 8px;
+  color: #ebe1e1;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn-submit {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #516452;
+} 
+@media only screen and (max-width: 768px) {
+  .main-container {
+    padding: 10px; 
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+  .container-second {
+    flex-direction: column; 
+  }
+
+  .registration-form {
+    width: 100%;
+}
+  .registration-image img{
+    height: 200px;
+    width: 200px;
+  }
+  .registration-form label{
+    font-size: 1.5rem;
+  }
+ 
+  /* Add more specific styling for smaller screens as needed */
+}
+
+
+
+/*..........................
+............................
+HOME PAGE START
+......................................
+........................*/
+.Home{
+  height: 70vh;
+ 
+   
+}
+.text-box {
+  width: 90%;
+
+  color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+
+  font-size: 70px;
+  color: rgb(175, 175, 175);
+
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #975555;
+  -webkit-text-fill-color: #98cbe3;
+  font-family: Impact, Charcoal, sans-serif;
+  text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(238, 243, 243), 0 0 21px #f3e3e3,
+    0 0 42px rgb(52, 121, 121), 0 0 82px rgb(83, 9, 50),
+    0 0 92px rgb(220, 240, 216), 0 0 102px rgb(192, 194, 216),
+    0 0 15px rgb(221, 221, 230);
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 15px;
+  color: #8a8585;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 12px;
+  background: transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #090d47;
+  background: #6e50a5;
+  transition: 1s;
+}
+/* media  */
+
+@media screen and (max-width: 768px) {
+  .text-box {
+    width: 80%;
+  }
+
+  .text-box h1 {
+    font-size: 50px;
+  }
+
+  .text-box p {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 10px 26px;
+    font-size: 10px;
+  }
+}
+/* 2nd */
+.smallContainer {
+  height: 150px;
+  width: 95%;
+ margin: 50px auto;
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.small-container {
+  display: flex;
+  height: 100px;
+  width: 23%;
+  border: 1px solid rgb(127, 133, 127);
+-webkit-box-shadow: 1px 5px 31px 2px rgba(62, 137, 187, 0.78);
+  -moz-box-shadow: 1px 5px 31px 2px rgba(71, 161, 177, 0.78);
+  box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+  transition: 1s;
+}
+
+.small-container:hover {
+
+  transform: scale(1.08);
+}
+.small-container .icons {
+  font-size: 40px;
+  color: white;
+  margin: 25px 25px;
+}
+.small-container p {
+  font-size: 40px;
+  color: aliceblue;
+  margin: 25px 10px;
+}
+
+/* Media Query */
+
+@media (max-width: 576px) {
+  .smallContainer {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    width: 80%;
+  }
+
+  .small-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .small-container p {
+    font-size: 24px;
+  }
+}
+
+/* 3RD */
+.Containers {
+  height: 100vh;
+  width: 100%;
+margin: 70px auto;
+  display: flex;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.Containers .text {
+  color: aliceblue;
+  margin: 50px auto 10px 10px;
+  text-align: center;
+}
+.Containers .text h1 {
+  color: rgb(255, 250, 250);
+font-size: 80px;
+  font-weight: 900;
+  margin: 10px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(82, 122, 122), 0 0 21px #f3e3e3,
+    0 0 42px rgb(52, 121, 121), 0 0 82px rgb(83, 9, 50),
+    0 0 92px rgb(220, 240, 216), 0 0 102px rgb(192, 194, 216),
+    0 0 15px rgb(221, 221, 230);
+}
+
+.Containers .text h2 {
+  font-size: 30px;
+  color: gray;
+  font-weight: 100;
+}
+.Containers .text p {
+  width: 50%;
+  color: #8f9999;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.Containers .text .play {
+  height: 50px;
+  width: 50px;
+  border: 2px solid rgb(190, 10, 40);
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  margin: 10px auto;
+}
+.Containers .text .play .fa-solid {
+  font-size: 25px;
+  color: rgb(238, 24, 24);
+  margin: auto;
+}
+.buttons-1 {
+  text-decoration: none;
+  color: #fff;
+  border: 0.5px solid #797373;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: rgb(226, 21, 21);
+  cursor: pointer;
+  width: 20%;
+  margin: 20px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.buttons-2 {
+  text-decoration: none;
+  color: #fff;
+  border: 0.5px solid #797373;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  cursor: pointer;
+  width: 20%;
+  margin: 20px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.buttons-1:hover {
+  border: 1px solid #090d47;
+  background: #172468;
+  transition: 1s;
+}
+.buttons-2:hover {
+  border: 1px solid #090d47;
+  background: #172468;
+  transition: 1s;
+}
+/* media  */
+@media screen and (max-width: 768px) {
+  .Containers {
+    flex-direction: column;
+    margin: 20px auto;
+    margin-bottom: 50px;
+  }
+  .Containers .text h1 {
+    font-size: 40px;
+  }
+  .Containers .text h2 {
+    font-size: 20px;
+  }
+
+  .Containers .text p {
+    width: 80%;
+  }
+
+  .buttons-1,
+  .buttons-2 {
+    width: 60%;
+  }
+}
+
+/*..........................
+............................
+HOME PAGE END
+......................................
+........................*/
+/*..........................
+............................
+CONTACT CSS START
+......................................
+........................*/
+.container {
+  margin: 100px auto;
+
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.col {
+  margin: 2px auto;
+  margin-top: -150px;
+  background-image: linear-gradient(to right top, #030404, #1c2523, #33423a, #51604f, #777f63);
+  height: 220px;
+  width: 100%;
+  border: 1px solid rgb(158, 148, 148);
+-webkit-box-shadow: 1px 5px 31px 2px rgba(62, 137, 187, 0.78);
+  -moz-box-shadow: 1px 5px 31px 2px rgba(71, 161, 177, 0.78);
+  box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+  transition: 1s;
+}
+.col:hover {
+  transform: scale(1.08);
+}
+
+.col .icons {
+  margin: 50px auto;
+  text-align: center;
+  justify-content: center;
+
+  font-size: 70px;
+  color: #9fb8be;
+}
+.icons h1 {
+  font-size: 20px;
+  color: #1e2020;
+  font-weight: 600;
+}
+.icons p {
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col {
+    margin-top: 0;
+    height: 180px;
+  }
+
+  .icons {
+    font-size: 50px;
+  }
+
+  .icons h1 {
+    font-size: 16px;
+  }
+
+  .icons p {
+    font-size: 12px;
+  }
+}
+
+/*..........................
+............................
+CONTACT PAGE END
+......................................
+........................*/
+/*..........................
+............................
+SERVICE PAGE START
+......................................
+........................*/
+.Cards {
+  width: 90%;
+  margin: 20px auto;
+    }
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 500px));
+  grid-gap: 50px;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+.text-center{
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+    .card {
+      margin: 25px auto 0;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: space-around;
+      align-items: flex-start;
+    transition: 1s;
+     
+    }
+    .card:hover{
+      transform: scale(1.06);
+     -webkit-box-shadow: 10px -5px 66px 9px rgba(3,150,161,1);
+    -moz-box-shadow: 10px -5px 66px 9px rgba(3,150,161,1);
+    box-shadow: 10px -5px 66px 9px rgba(3,150,161,1);
+    }
+    
+    .card img {
+      max-width: 100%;
+      height: 200px;
+    }
+    
+    .card {
+      background-image: linear-gradient(to right top, #030404, #1c2523, #33423a, #51604f, #777f63);
+      padding: 30px;
+      position: relative;
+      box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+      /* z-index: 1; */
+    }
+    
+    .card-body {
+      display: inline-block;
+    
+    }
+    
+    .card-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 60px;
+      margin: 10px 0;
+      text-transform: capitalize;
+    }
+    
+    .card-text {
+      color: white;
+      font-size: 15px;
+      opacity: 0.5;
+    font-weight: 100;
+   
+      margin: 15px 0;
+    }
+    @media only screen and (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      }
+    }    
+
+   
+    /* 2nd */
+    .h1main h1 {
+      align-items: center;
+      margin: auto;
+      color: rgb(200, 224, 214);
+      text-align: center;
+      font-size: 45px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      margin-bottom: -50px;
+      font-weight: 800;
+      text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(238, 243, 243), 0 0 21px #8a4b4b,
+        0 0 42px rgb(30, 107, 107), 0 0 82px rgb(83, 9, 50),
+        0 0 92px rgb(84, 136, 73), 0 0 102px rgb(125, 128, 163),
+        0 0 15px rgb(56, 56, 92);
+    }
+    .appContainer {
+      height: 150px;
+      width: 95%;
+      /* border: 2px solid red; */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      margin: 50px auto;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .app_container {
+      display: flex;
+      height: 100px;
+      width: 23%;
+    
+    
+    }
+    
+    .app_container:hover {
+     
+      transform: scale(1.08);
+      border: 1px solid rgb(127, 133, 127);
+      -webkit-box-shadow: 1px 5px 31px 2px rgba(62, 137, 187, 0.78);
+      -moz-box-shadow: 1px 5px 31px 2px rgba(71, 161, 177, 0.78);
+      box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+      transition: 1s;
+    }
+    .images img {
+      height: 60px;
+      width: 60px;
+      margin: 25px 25px;
+      border-radius: 50%;
+    }
+    
+    .app_container p {
+      font-size: 40px;
+      color: aliceblue;
+      margin: 25px 10px;
+    }
+    /* Media Query */
+    
+    @media (max-width: 768px) {
+      .appContainer {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+      margin-top: 20%;
+        margin-bottom: 100%;
+      }
+    
+      .app_container {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    
+      .app_container p {
+        font-size: 30px;
+      }
+    } 
+    
+     
+    
+    
+/*..........................
+............................
+SERVICE PAGE END
+......................................
+........................*/
+/*..........................
+............................
+ABOUT PAGE START
+......................................
+........................*/
+.boxContainer {
+ 
+  height: 90vh;
+
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+.head h1 {
+  align-items: center;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: -70px;
+  font-weight: 800;
+  text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(238, 243, 243), 0 0 21px #f3e3e3,
+    0 0 42px rgb(52, 121, 121), 0 0 82px rgb(83, 9, 50),
+    0 0 92px rgb(220, 240, 216), 0 0 102px rgb(192, 194, 216),
+    0 0 15px rgb(221, 221, 230);
+}
+.box1 {
+  height: 350px;
+  width: 500px;
+  border: 4px solid;
+  -webkit-box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  border-image: linear-gradient(#f18137, #af24dd) 1;
+  animation: anim-border 2.5s ease-in infinite;
+}
+@keyframes anim-border {
+  50% {
+    border-image: linear-gradient(360deg, #f18137, #af24dd, #5e921a) 1;
+  }
+}
+.box1 h1 {
+  font-size: 30px;
+  color: white;
+  /* font-weight: 500; */
+  text-align: center;
+  align-items: center;
+  margin: 15px auto 10px;
+  color: rgb(175, 175, 175);
+
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #975555;
+  -webkit-text-fill-color: #98cbe3;
+  font-family: Impact, Charcoal, sans-serif;
+}
+.box1 h4 {
+  /* margin-top: 25px; */
+  color: rgb(240, 238, 238);
+  font-size: 20px;
+  text-align: center;
+  width: 70%;
+  margin: 40px auto 0px;
+  /* margin: 2px auto; */
+}
+.box1 p {
+  color: rgb(212, 203, 203);
+  font-size: 20px;
+  text-align: center;
+
+  margin: 2px auto;
+  width: 90%;
+}
+.button {
+  text-decoration: none;
+  color: #fff;
+  border: 0.5px solid #fff;
+  padding: 12px 34px;
+  font-size: 12px;
+  background: transparent;
+  cursor: pointer;
+  width: 30%;
+  margin: 10px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.button:hover {
+  border: 1px solid #090d47;
+  background: #172468;
+  transition: 1s;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .boxContainer {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    width: 100%;
+    margin: 40px auto  30px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20%;
+  }
+
+  .head h1 {
+    font-size: 25px;
+    margin-bottom: -75px;
+  }
+
+  .box1 {
+    margin-top: 30px;
+    height: 250px;
+    width: 300px;
+    /* width: 100%; */
+  }
+
+  .box1 h1 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .box1 h4 {
+    font-size: 12px;
+    margin: 10px auto 0;
+  }
+
+  .box1 p {
+    font-size: 14px;
+    margin: 2px auto;
+  }
+
+  .button {
+    font-size: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+
+
+/* 2ND/ */
+.Container {
+  height: 600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.BoxContainer {
+  height: 250px;
+  width: 60%;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  border: 0.2px solid white;
+  -webkit-box-shadow: 1px 5px 31px 2px rgba(62, 137, 187, 0.78);
+  -moz-box-shadow: 1px 5px 31px 2px rgba(71, 161, 177, 0.78);
+  box-shadow: 1px 5px 31px 2px rgba(73, 136, 179, 0.78);
+  transition: 1s;
+}
+.BoxContainer h1 {
+  color: rgb(255, 250, 250);
+
+  font-size: 80px;
+  font-weight: 900;
+  margin: 20px auto 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(82, 122, 122), 0 0 21px #f3e3e3,
+    0 0 42px rgb(52, 121, 121), 0 0 82px rgb(83, 9, 50),
+    0 0 92px rgb(220, 240, 216), 0 0 102px rgb(192, 194, 216),
+    0 0 15px rgb(221, 221, 230);
+}
+
+.podbtn {
+  display: inline-block;
+  text-decoration: none;
+  color: #1e137e;
+  border: 1px solid #fff;
+  padding: 12px 40px;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  background: #ececf3;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+}
+.podbtn:hover {
+  color: #f3e3e3;
+  border: 1px solid #515580;
+  background: #321d5a;
+  transition: 1s;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  .Container {
+    height: 400px;
+    margin: 50px auto;
+  }
+
+  .BoxContainer {
+    width: 80%;
+    height: 200px;
+  }
+
+  .BoxContainer h1 {
+    font-size: 40px;
+    margin: 15px auto 20px;
+  }
+
+  .podbtn {
+    padding: 10px 30px;
+    font-size: 16px;
+    /* border: 1px solid #fff; */
+  }
+}
+/* ABOUT PAGE END */
+
+/* .......................................................
+............................................
+..............ADMIN CSS START .....................
+............................................
+........................................ */
+/* Add this CSS to your styles file or component */
+
+
+/*..........................
+............................
+NAVBAR START
+......................................
+........................*/
+
+.containerS {
+  width: 80%;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+ } 
+
+nav ul li a:hover {
+  color: #2980b9;
+}
+
+
+
+/*..........................
+............................
+NAVBAR END
+......................................
+........................*/
+
+/*..........................
+............................
+ADMIN TABLE CSS START
+......................................
+........................*/
+
+
+table {
+margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px ;
+  /* background: white; */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 1.5rem;
+  color: white;
+}
+
+th {
+  background-color: #9e2929;
+}
+
+tr:hover {
+  background-color: #924747;
+}
+
+button {
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #407092;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+.adminHeader{
+  color:white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
